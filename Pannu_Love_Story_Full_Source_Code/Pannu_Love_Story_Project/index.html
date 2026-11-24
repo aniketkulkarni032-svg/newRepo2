@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8dce4">
+<title>Our Little World | Pannu & You</title>
+<style>
+:root{--rose:#b94d6a;--deep:#713247;--blush:#f8dce4;--cream:#fffaf7;--ink:#573744}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+nav{position:fixed;top:0;z-index:5;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 6%;background:#fffaf7dd;backdrop-filter:blur(12px);border-bottom:1px solid #f2d7df}
+.logo{font-size:1.1rem;color:var(--deep)} nav a{color:var(--deep);text-decoration:none;font:600 .85rem Arial;margin-left:18px}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 22px 65px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 15% 15%,#fff 0,transparent 35%),linear-gradient(140deg,#fff3f5,#f5cbd7 58%,#fff2e9)}
+.hero:before,.hero:after{content:"♡";position:absolute;color:#d77c96;opacity:.25;font-size:clamp(100px,20vw,230px)}.hero:before{left:3%;top:20%;transform:rotate(-18deg)}.hero:after{right:4%;bottom:5%;transform:rotate(15deg)}
+.hero-inner{max-width:760px;position:relative;z-index:1}
+.kicker{font:700 .72rem Arial;letter-spacing:4px;text-transform:uppercase;color:#a64b67}
+h1{font-size:clamp(3.6rem,11vw,7.7rem);font-weight:normal;line-height:.92;margin:20px 0;color:#a63e5d}
+.hero p{font-size:clamp(1.05rem,2.6vw,1.35rem);line-height:1.8;max-width:600px;margin:25px auto}
+.btn{display:inline-block;border:0;border-radius:99px;padding:15px 25px;background:var(--rose);color:white;text-decoration:none;font:700 .9rem Arial;cursor:pointer;box-shadow:0 9px 25px #9d3d5c30;transition:.2s}.btn:hover{transform:translateY(-3px)}
+section{padding:88px 20px}.wrap{max-width:1050px;margin:auto}.center{text-align:center}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:normal;color:var(--deep);margin:12px 0 22px}
+.lead{max-width:700px;margin:0 auto;font-size:1.08rem;line-height:1.9}
+.story{background:#fff}.timeline{max-width:720px;margin:35px auto 0;border-left:2px solid #e8b7c5;padding-left:25px;text-align:left}
+.moment{position:relative;padding:0 0 25px}.moment:before{content:"♥";position:absolute;left:-35px;top:0;color:var(--rose);background:white}
+.moment h3{font-weight:normal;color:var(--rose);font-size:1.3rem;margin:0 0 7px}.moment p{font:1rem/1.7 Arial;color:#765b65;margin:0}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:34px}
+.photo{margin:0;background:white;padding:10px 10px 16px;border-radius:8px;box-shadow:0 10px 30px #71324715;transform:rotate(var(--tilt,0deg));transition:.25s}
+.photo:nth-child(odd){--tilt:-1deg}.photo:nth-child(even){--tilt:1deg}.photo:hover{transform:translateY(-5px) rotate(0)}
+.photo img{width:100%;height:330px;object-fit:contain;background:#f8edf0;border-radius:4px;display:block}.photo figcaption{text-align:center;padding:13px 4px 0;color:#94516a;font-style:italic}
+.letter-bg{background:linear-gradient(135deg,#f9e2e8,#fff4ed)}.letter{max-width:760px;margin:30px auto;background:#fffdfb;padding:clamp(25px,5vw,50px);border:1px solid #f0d3dc;border-radius:18px;box-shadow:0 16px 40px #71324712;font-size:1.08rem;line-height:2}
+.surprise{background:#fff;text-align:center}#secret{display:none;max-width:650px;margin:25px auto 0;padding:24px;background:#fff0f4;border-radius:18px;font-size:1.18rem;line-height:1.9;color:#843b55}
+footer{text-align:center;padding:35px 15px;background:#f7e1e7;color:#8b5367;font: .85rem Arial}
+.heart-float{position:fixed;bottom:-30px;pointer-events:none;z-index:10;animation:rise 4s linear forwards;color:#d85e7e}
+@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:760px){nav{padding:13px 4%}nav a{margin-left:9px;font-size:.72rem}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photo img{height:260px}}
+@media(max-width:430px){.gallery{grid-template-columns:1fr 1fr}.photo img{height:210px}nav .logo{font-size:.9rem}}
+</style>
+</head>
+<body>
+<nav><div class="logo">Pannu ♡ Always</div><div><a href="#story">Our story</a><a href="#memories">Memories</a><a href="#letter">My letter</a></div></nav>
+<header class="hero">
+ <div class="hero-inner"><div class="kicker">A little website, a lot of love</div><h1>For Pannu</h1>
+ <p>In a world full of moments, you became one of my favourite reasons to smile. This little corner is just for us. ❤️</p>
+ <a class="btn" href="#story">Explore our little world ♡</a></div>
+</header>
+<section class="story" id="story"><div class="wrap center">
+ <div class="kicker">Chapter one · Since 2024</div><h2>Our little love story</h2>
+ <p class="lead">It started with two people and a moment that became the beginning of something meaningful. Since 2024, we've collected memories, smiles, lessons and little moments that make our story ours.</p>
+ <div class="timeline">
+  <div class="moment"><h3>2024 · The beginning</h3><p>The year our story began. A new chapter, with memories still being written.</p></div>
+  <div class="moment"><h3>Every little moment</h3><p>The pictures, the laughs, the quiet times and the memories that stay close to the heart.</p></div>
+  <div class="moment"><h3>Today · Still choosing love</h3><p>One day at a time, one memory at a time. Here's to the moments still waiting for us.</p></div>
+ </div>
+</div></section>
+<section id="memories"><div class="wrap center"><div class="kicker">Little moments, forever memories</div><h2>Our memory gallery</h2><p class="lead">Every picture holds a moment. Every moment has a story. ❤️</p><div class="gallery"><figure class="photo"><img src="assets/photo6.jpg" alt="Couple memory 1"><figcaption>A little memory ♡</figcaption></figure>
+<figure class="photo"><img src="assets/photo5.jpg" alt="Couple memory 2"><figcaption>Us, together ♡</figcaption></figure>
+<figure class="photo"><img src="assets/photo4.jpg" alt="Couple memory 3"><figcaption>A favourite moment ♡</figcaption></figure>
+<figure class="photo"><img src="assets/photo3.jpg" alt="Couple memory 4"><figcaption>Close to you ♡</figcaption></figure>
+<figure class="photo"><img src="assets/photo2.jpg" alt="Couple memory 5"><figcaption>My favourite place ♡</figcaption></figure>
+<figure class="photo"><img src="assets/photo1.jpg" alt="Couple memory 6"><figcaption>A memory to keep ♡</figcaption></figure></div></div></section>
+<section class="letter-bg" id="letter"><div class="wrap center"><div class="kicker">A note from my heart</div><h2>Dear Pannu,</h2>
+ <div class="letter" style="text-align:left"><span style="font-size:1.4rem;color:#b94d6a">My sweetest Pannu,</span><br>
+ I made this little website for you because sometimes a simple “I love you” doesn't feel big enough for everything I want to say.
+ <br><br>Thank you for being part of my life and for all the memories we've made. The smallest moments with you can become the ones I remember the most. I hope these pictures remind you that our story is made of real moments, and that each one is worth keeping.
+ <br><br>I don't know what every tomorrow will look like, but I hope we keep meeting it with kindness, honesty, laughter and love. You deserve to feel valued, respected and cherished—not just today, but every day.
+ <br><br><strong>With love, always,</strong><br>Your person ❤️</div>
+</div></section>
+<section class="surprise"><div class="wrap"><div class="kicker">A tiny surprise</div><h2>One question, Pannu…</h2>
+<p class="lead">Will you keep making beautiful memories with me?</p>
+<button class="btn" onclick="reveal()">Tap for your surprise 💗</button>
+<div id="secret">Pannu, you are a beautiful part of my story. Thank you for every smile and every memory. Here's to more laughter, more adventures, and more little moments together. I love you. ❤️</div>
+</div></section>
+<footer>Made with love, especially for Pannu · You & me, one memory at a time ♡</footer>
+<script>
+function reveal(){document.getElementById('secret').style.display='block';for(let i=0;i<18;i++){setTimeout(()=>{const h=document.createElement('span');h.className='heart-float';h.textContent=['♥','♡','💗'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(18+Math.random()*22)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),4100)},i*100)}}
+</script>
+</body></html>
